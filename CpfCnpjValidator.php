@@ -1,9 +1,11 @@
 <?php
 /*
-* WHMCS hoork - https://github.com/
-*@author Chags
-*@description: hoork de validaçãode CPF e CNPJ do WHMCS
-*
+    @HookName: WHMCS - Validador de CPF/CNPJ
+    @https://github.com/chags/WHMCS-CpfCnpjValidator
+    @author Chags  https://github.com/chags
+    @description: hoork de validação de CPF e CNPJ no formulario de cadastro do WHMCS 
+    @valida se tem no bando para não repetir e se esta no padrão de geração de CPF/CNPJ
+    @licence GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
 */
 
 if (!defined('WHMCS')) {
