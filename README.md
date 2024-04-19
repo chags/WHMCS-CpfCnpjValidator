@@ -16,7 +16,7 @@ Ajuda muitos nas compras com PIX ou cartão. Aqui no Brasil as operadora só ace
 ![Logo da Minha Empresa](https://repository-images.githubusercontent.com/789124373/a9d8bc18-39b6-4cef-b538-d16f28728703)
 
 - [ ] Se esse é o primeiro campo customizado no seu WHMCS o ID dele é ```1``` então pule para o PASSO 2, mas se já tiver outros campos criados você precisa fazer uma pequena alteração no codigo do arquivo `CpfCnpjValidator.php`,
-- [ ] na linha 85 tem essa variável : 
+- [ ] na linha 87 tem essa variável : 
 ```$customfield_cpf_cnpj = 1; //Substitua o numero 1 pelo numero do ID do seu campo custmoizado  ``` 
 - [ ] Para saber o ID do campos customisado da tabela: ```tblcustomfieldsvalues``` acesse o banco do seu WHCMS procure o campo que você criou e pegue o numero do ID e substitua no código. 
 
