@@ -1,4 +1,10 @@
 <?php
+/*
+* WHMCS hoork - https://github.com/
+*@author Chags
+*@description: hoork de validaçãode CPF e CNPJ do WHMCS
+*
+*/
 
 if (!defined('WHMCS')) {
     die('You cannot access this file directly.');
