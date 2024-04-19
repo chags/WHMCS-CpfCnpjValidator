@@ -36,7 +36,8 @@ Se você encontrar problemas durante a instalação ou tiver dúvidas sobre o fu
 Se esse código te fez economizar uma boa grana e aumentar seu tempo de diversão, eu acho que não vai te fazer falta um pequeno valor!
 mas se você esta duro que eu duvido, pode pegar mesmo assim!!!kkkk 
 
-- chave aleatória do pix: 1f2fdb70-428b-4ccd-bf4a-475a317aa1be
+- chave aleatória do pix: 
+### ```1f2fdb70-428b-4ccd-bf4a-475a317aa1be```
 Francisco cristiano Chagas
 ---
 
