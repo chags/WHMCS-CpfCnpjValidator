@@ -14,7 +14,7 @@ Ajuda nas compra com PIX ou cartão aqui no Brasil pois as operadora só aceita 
 - Acesse: Opções/ Campos customizados
 - preencha com o primeiro imput com nome `CPF ou CNPJ`
 - Os demais campos do formulario não precisa preencher conforme figura abaixo.
-
+![Logo da Minha Empresa](https://repository-images.githubusercontent.com/789124373/a9d8bc18-39b6-4cef-b538-d16f28728703)
 
 - Se você nunca criou um campo customizado o codigo já funciona, mas se ja tiver 
 - um campo criado você precisa fazer uma pequena alteração no codigo do arquivo `CpfCnpjValidator.php`,
