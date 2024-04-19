@@ -11,20 +11,19 @@ Ajuda nas compra com PIX ou cartão aqui no Brasil pois as operadora só aceita 
 - Você deve cria o campo customizado  `CPF ou CNPJ` no painel do WHMCS antes de instalar o arquivo.
 
 ## PASSO 1   Criação do campo CPF ou  CNPJ no WHMCS
-- [ ] Acesse: Opções/Campos customizados.
+- [X] Acesse: Opções/Campos customizados.
 - [ ] preencha com o primeiro imput com nome `CPF ou CNPJ`
 - [ ] Os demais campos do formulario não precisa preencher conforme figura abaixo.
 ![Logo da Minha Empresa](https://repository-images.githubusercontent.com/789124373/a9d8bc18-39b6-4cef-b538-d16f28728703)
 
-- [ ] Se você nunca criou um campo customizadonono no seu WHMCS o codigo já funciona, mas se ja tiver um campo criado você precisa fazer uma pequena alteração no codigo do arquivo `CpfCnpjValidator.php`,
+- [ ] Se Esse é o primeiro campo customizado no seu WHMCS o ID dele é ```1``` então pule para o PASSO 2, mas se já tiver outros campos criados você precisa fazer uma pequena alteração no codigo do arquivo `CpfCnpjValidator.php`,
 - [ ] na linha 85 tem essa variável : 
 ```$customfield_cpf_cnpj = 1; //Substitua o numero 1 pelo numero do ID do seu campo custmoizado  ``` 
-- [ ] Para saber o ID do campos da tabela: tblcustomfieldsvalues acesse o bancodo seu WHCMS
-
+- [ ] Para saber o ID do campos da tabela: tblcustomfieldsvalues acesse o bancodo seu WHCMS procure o campo que vocêw criou e peguei o numero do ID e substitua no codigo.
 
 ## PASSO 2 Instalação do aquivo no WHMCS
 
-- [ ]. acesse se WHMCS via FTP na pasta  /includes/hooks  e coloque  o arquivo `CpfCnpjValidator.php` dentro da pasta hooks.
+- [ ]. acesse se WHMCS via FTP na pasta  ```/includes/hooks```  e coloque  o arquivo `CpfCnpjValidator.php` dentro da pasta hooks.
 
 ## PASSO 3 - Não tem passo 3 - pode usar kkkk
 
@@ -38,7 +37,7 @@ Se você encontrar problemas durante a instalação ou tiver dúvidas sobre o fu
 Se esse código te fez economizar uma boa grana e aumentar seu tempo de diversão, eu acho que não vai te fazer falta um pequeno valor!
 mas se você esta duro que eu duvido, pode pegar mesmo assim!!!kkkk 
 
-chave aleatória do pix: 1f2fdb70-428b-4ccd-bf4a-475a317aa1be
+- chave aleatória do pix: 1f2fdb70-428b-4ccd-bf4a-475a317aa1be
 Francisco cristiano Chagas
 ---
 
