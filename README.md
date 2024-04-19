@@ -1,35 +1,45 @@
 # WHMCS - Validador de Duplicidade de CPF/CNPJ no WHMCS
 
-Este script PHP foi desenvolvido para adicionar uma verificação de duplicidade de CPF/CNPJ durante o processo de validação de detalhes do cliente no WHMCS. Ele utiliza os ganchos (hooks) do WHMCS para interceptar o processo de validação e realizar as verificações necessárias.
+verificação se o CPF é válido, ele não verrifica se exite na base do governo.
+verifica a duplicidade de CPF/CNPJ no cadastro do banco de dados do WHMCS.
+Ajuda nas compra com PIX ou cartão aqui no Brasil pois as operadora só aceita transação com o CPF valido.
 
 ## Pré-requisitos
 
 - Você deve ter acesso ao código-fonte do WHMCS para instalar este script.
 - Certifique-se de ter permissões adequadas para modificar os arquivos do WHMCS.
+- Você deve cria o campo customizado  `CPF ou CNPJ` no painel do WHMCS antes de instalar o arquivo.
 
-## Instalação
+## PASSO 1   Criação do campo CPF ou  CNPJ no WHMCS
+- Acesse: Opções/ Campos customizados
+- preencha com o primeiro imput com nome `CPF ou CNPJ`
+- Os demais campos do formulario não precisa preencher conforme figura abaixo.
 
-1. Faça o download do arquivo `CpfCnpjValidator.php`.
-2. Faça login no painel administrativo do seu WHMCS.
-3. Acesse Opções/Campos personalizados.
-4. Clique em "Adicionar Novo Hook".
-5. No campo "Nome do Gancho", insira `ClientDetailsValidation`.
-6. No campo "Prioridade", insira `1`.
-7. No campo "Função PHP", cole o conteúdo do arquivo `CpfCnpjValidator.php`.
-8. Clique em "Salvar".
 
-Agora, o script está instalado e será executado durante o processo de validação de detalhes do cliente.
+- Se você nunca criou um campo customizado o codigo já funciona, mas se ja tiver 
+- um campo criado você precisa fazer uma pequena alteração no codigo do arquivo `CpfCnpjValidator.php`,
+- na linha 85 tem essa variável : $customfield_cpf_cnpj = 1;  Ela precisa ser mudada conforme o o ID do campos da tabela: tblcustomfieldsvalues
+- Só  é possviel ver acessando o banco de dados do WHMCS.
+-
+'
+## PASSO 2 Instalação do aquivo no WHMCS
 
-## Notas Importantes
+1. acesse se WHMCS via FTP na pasta  /includes/hooks  e coloque  o arquivo `CpfCnpjValidator.php` dentro da pasta hooks.
 
-- Certifique-se de que o arquivo `CpfCnpjValidator.php` esteja corretamente configurado com as informações do seu ambiente do WHMCS.
-- Este script foi testado no WHMCS [insira a versão do WHMCS aqui]. 
+## PASSO 3 - Não tem passo 3 - pode usar kkkk
+
+- Este script foi testado no WHMCS 8.9.0. 
 
 ## Suporte
 
 Se você encontrar problemas durante a instalação ou tiver dúvidas sobre o funcionamento deste script, sinta-se à vontade para [abrir uma issue](link para as issues do GitHub) neste repositório.
 
+## Contribua com um Café
+Se esse código te fez economizar uma boa grana e aumentar seu tempo de diversão, eu acho que não vai te fazer falta um pequeno valor!
+mas se você esta duro que eu duvido, pode pegar mesmo assim!!!kkkk 
+
+chave aleatória do pix: 1f2fdb70-428b-4ccd-bf4a-475a317aa1be
+Francisco cristiano Chagas
 ---
 
-Lembre-se de substituir `[insira a versão do WHMCS aqui]` pelo número da versão do WHMCS que você testou. Além disso, forneça um link adequado para as issues do GitHub, caso os usuários encontrem problemas e queiram reportá-los.
 
