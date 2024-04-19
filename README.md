@@ -1,7 +1,7 @@
-# WHMCS - Validador de Duplicidade de CPF/CNPJ no WHMCS
+# WHMCS - Validador de CPF/CNPJ
 
-verificação se o CPF é válido, ele não verrifica se exite na base do governo.
-verifica a duplicidade de CPF/CNPJ no cadastro do banco de dados do WHMCS.
+Verificação se o CPF/CNPJ é válido, ele não verifica se exite na base do governo.
+Verifica a duplicidade de CPF/CNPJ no cadastro do banco de dados do WHMCS.
 Ajuda nas compra com PIX ou cartão aqui no Brasil pois as operadora só aceita transação com o CPF valido.
 
 ## Pré-requisitos
@@ -18,10 +18,11 @@ Ajuda nas compra com PIX ou cartão aqui no Brasil pois as operadora só aceita 
 
 - Se você nunca criou um campo customizado o codigo já funciona, mas se ja tiver 
 - um campo criado você precisa fazer uma pequena alteração no codigo do arquivo `CpfCnpjValidator.php`,
-- na linha 85 tem essa variável : $customfield_cpf_cnpj = 1;  Ela precisa ser mudada conforme o o ID do campos da tabela: tblcustomfieldsvalues
-- Só  é possviel ver acessando o banco de dados do WHMCS.
--
-'
+- na linha 85 tem essa variável : 
+```$customfield_cpf_cnpj = 1; //Substitua o numero 1 pelo numero do ID do seu campo custmoizado  ``` 
+- Para saber o ID do campos da tabela: tblcustomfieldsvalues acesse o bancodo seu WHCMS
+
+
 ## PASSO 2 Instalação do aquivo no WHMCS
 
 1. acesse se WHMCS via FTP na pasta  /includes/hooks  e coloque  o arquivo `CpfCnpjValidator.php` dentro da pasta hooks.
