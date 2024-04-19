@@ -1,8 +1,8 @@
 # WHMCS - Validador de CPF/CNPJ
 
-Verificação se o CPF/CNPJ é válido, ele não verifica se exite na base do governo.
-Verifica a duplicidade de CPF/CNPJ no cadastro do banco de dados do WHMCS.
-Ajuda nas compra com PIX ou cartão aqui no Brasil pois as operadora só aceita transação com o CPF valido.
+- Verificação se o CPF/CNPJ é válido, ele não verifica se exite na base do governo.
+- Verifica a duplicidade de CPF/CNPJ no cadastro do banco de dados do WHMCS.
+Ajuda muitos nas compras com PIX ou cartão. Aqui no Brasil as operadora só aceita transação com o CPF ou CNPJ válido.
 
 ## Pré-requisitos
 
@@ -12,14 +12,13 @@ Ajuda nas compra com PIX ou cartão aqui no Brasil pois as operadora só aceita 
 
 ## PASSO 1   Criação do campo CPF ou  CNPJ no WHMCS
 - [X] Acesse: Opções/Campos customizados.
-- [ ] preencha com o primeiro imput com nome `CPF ou CNPJ`
-- [ ] Os demais campos do formulario não precisa preencher conforme figura abaixo.
+- [ ] Preencha em Nome do Campo `CPF ou CNPJ` conforme figura abaixo:
 ![Logo da Minha Empresa](https://repository-images.githubusercontent.com/789124373/a9d8bc18-39b6-4cef-b538-d16f28728703)
 
 - [ ] Se Esse é o primeiro campo customizado no seu WHMCS o ID dele é ```1``` então pule para o PASSO 2, mas se já tiver outros campos criados você precisa fazer uma pequena alteração no codigo do arquivo `CpfCnpjValidator.php`,
 - [ ] na linha 85 tem essa variável : 
 ```$customfield_cpf_cnpj = 1; //Substitua o numero 1 pelo numero do ID do seu campo custmoizado  ``` 
-- [ ] Para saber o ID do campos da tabela: tblcustomfieldsvalues acesse o bancodo seu WHCMS procure o campo que vocêw criou e peguei o numero do ID e substitua no codigo.
+- [ ] Para saber o ID do campos da tabela: ```tblcustomfieldsvalues``` acesse o banco do seu WHCMS procure o campo que você criou e pegue o numero do ID e substitua no código.
 
 ## PASSO 2 Instalação do aquivo no WHMCS
 
