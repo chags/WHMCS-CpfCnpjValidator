@@ -22,7 +22,7 @@ Ajuda muitos nas compras com PIX ou cartão. Aqui no Brasil as operadoras só ac
 
 ## PASSO 2 Instalação do aquivo no WHMCS
 
-- [ ] Acesse se WHMCS via FTP na pasta  ```/includes/hooks```  e coloque  o arquivo `CpfCnpjValidator.php` dentro da pasta hooks.
+- [ ] Acesse seu WHMCS via FTP na pasta  ```/includes/hooks```  e coloque  o arquivo `CpfCnpjValidator.php` dentro da pasta hooks.
 
 ## PASSO 3 - Não tem passo 3 - pode usar kkkk
 
@@ -30,7 +30,7 @@ Ajuda muitos nas compras com PIX ou cartão. Aqui no Brasil as operadoras só ac
 
 ## Suporte
 
-Se você encontrar problemas durante a instalação ou tiver dúvidas sobre o funcionamento deste script, sinta-se à vontade para [abrir uma issue](link para as issues do GitHub) neste repositório.
+Se você encontrar problemas durante a instalação ou tiver dúvidas sobre o funcionamento deste script, sinta-se à vontade para abrir uma issue neste repositório.
 
 ## Contribua com um Café
 Se esse código te fez economizar uma boa grana e aumentar seu tempo de diversão, eu acho que não vai te fazer falta um pequeno valor!
