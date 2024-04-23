@@ -2,7 +2,7 @@
 
 - Verificação se o CPF/CNPJ é válido, ele não verifica se exite na base do governo.
 - Verifica a duplicidade de CPF/CNPJ no cadastro do banco de dados do WHMCS.
-Ajuda muitos nas compras com PIX ou cartão. Aqui no Brasil as operadora só aceita transação com o CPF ou CNPJ válido.
+Ajuda muitos nas compras com PIX ou cartão. Aqui no Brasil as operadoras só aceita transação com o CPF ou CNPJ válido.
 
 ## Pré-requisitos
 
